@@ -3,10 +3,10 @@ import { quickSort } from '../../utils/array'
  * @param {number[]} nums
  * @return {number[][]}
  */
- export default threeSum = function(nums) {
+ export const threeSum = function(nums) {
     var arr = quickSort(nums)
     var res = []
-    for(i=0;i<arr.length - 2;i++){
+    for(var i=0;i<arr.length - 2;i++){
         var j=i+1,k=arr.length-1
         while(j<k){
             var s = arr[i]+arr[j]+arr[k]
